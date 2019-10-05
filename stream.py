@@ -24,6 +24,6 @@ class StdOutListener(StreamListener):
 
 auth = OAuthHandler(ckey, csecret)
 auth.set_access_token(atoken, asecret)
-keywords = ["Obstrmole fuck you nigga niggi"]
+keywords = ["hello twitter"]
 twitterStream = Stream(auth, StdOutListener())
 twitterStream.filter(track=keywords, languages=["en"])
